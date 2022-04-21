@@ -13,6 +13,6 @@
 
 - Now two text files are created once you run the python file - t1t2.txt and t2t1.txt. These are transactions for T1-T2 and T2-T1 respectively. 
 
-- Move the required Text file (t1t2.txt or t2t1.txt) to the parent directory where App.java is present. Or change the pathname accordingly in the function readLine() present in App.java
+- Change the variable fileName to "t1t2.txt" or "t2t1.txt" as per need. 
 
 - Run App.java and you will see the schedules that are conflict equivalent to Tx-Ty where x and y are of your choosing. 
