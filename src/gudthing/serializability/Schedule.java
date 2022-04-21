@@ -43,7 +43,7 @@ public class Schedule {
             String item = schedule[i].substring(2);
             append(action, transaction, item);
         }
-        System.out.println(theSchedule.size());
+//        System.out.println(theSchedule.size());
     }
 
     /**
@@ -117,7 +117,7 @@ public class Schedule {
     public String precedenceGraph() {
         String result = "";
         for (OperationConflict o : conflictSerializableTest()) {
-            result += o.fromOperation.getTransaction() + " -> " + o.toOperation.getTransaction() + "\n";
+            result += o.fromOperation.getTransaction() + "->" + o.toOperation.getTransaction()+"\n";
         }
 
         return result;
